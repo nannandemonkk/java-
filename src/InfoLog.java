@@ -13,6 +13,6 @@ public class InfoLog extends LogEntry {
     @Override
     public String format() {
         // TODO: 使用时间、级别和消息构造输出文本。
-        return "";
+        return getCreatedAt() + " [" + getLevel() + "] " + getMessage();
     }
 }
